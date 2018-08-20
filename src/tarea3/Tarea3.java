@@ -62,7 +62,7 @@ public class Tarea3 {
         Entrada.close();
     } catch (Exception e) {
             System.out.println("");
-            System.out.println("***ATENCIÓN***");
+            System.out.println("                  ***ATENCIÓN***");
             System.out.println("¡EL INGRESO DE LETRAS Y/O SIGNOS NO ESTÁ PERMITIDO!");
             System.out.println("");
             Menu();
@@ -132,7 +132,7 @@ public class Tarea3 {
         Menu();
      } catch (Exception e) {
             System.out.println("");
-            System.out.println("***ATENCIÓN***");
+            System.out.println("                  ***ATENCIÓN***");
             System.out.println("¡EL INGRESO DE LETRAS Y/O SIGNOS NO ESTÁ PERMITIDO!");
             System.out.println("");
             Usuarios();
@@ -190,7 +190,7 @@ public class Tarea3 {
         }  
     } catch (Exception e) {
             System.out.println("");
-            System.out.println("***ATENCIÓN***");
+            System.out.println("                  ***ATENCIÓN***");
             System.out.println("¡EL INGRESO DE LETRAS Y/O SIGNOS NO ESTÁ PERMITIDO!");
             System.out.println("");
             Orden();
@@ -266,10 +266,10 @@ public class Tarea3 {
         System.out.println("Alumno 3" + "   " + Calificaciones[2][2] + "   " + Calificaciones[3][2] + "   " + Calificaciones[4][2] + "   " + Calificaciones[5][2] + "   " + promedio2);
         System.out.println("Alumno 4" + "   " + Calificaciones[2][3] + "   " + Calificaciones[3][3] + "   " + Calificaciones[4][3] + "   " + Calificaciones[5][3] + "   " + promedio3);
         System.out.println("Alumno 5" + "   " + Calificaciones[2][4] + "   " + Calificaciones[3][4] + "   " + Calificaciones[4][4] + "   " + Calificaciones[5][4] + "   " + promedio4);
-        System.out.println("6." + "   " + Calificaciones[2][5] + "   " + Calificaciones[3][5] + "   " + Calificaciones[4][5] + "   " + Calificaciones[5][5] + "   " + promedio5);
+        System.out.println("Alumno 6" + "   " + Calificaciones[2][5] + "   " + Calificaciones[3][5] + "   " + Calificaciones[4][5] + "   " + Calificaciones[5][5] + "   " + promedio5);
     } catch (Exception e) {
             System.out.println("");
-            System.out.println("***ATENCIÓN***");
+            System.out.println("                  ***ATENCIÓN***");
             System.out.println("¡EL INGRESO DE LETRAS Y/O SIGNOS NO ESTÁ PERMITIDO!");
             System.out.println("");
             Promedios();
@@ -277,7 +277,7 @@ public class Tarea3 {
     }
 
     public static void Close() {
-        System.out.println("Saliendo del sistema.....");
+        System.out.println("Saliendo del Sistema.....");
         System.exit(0);
     }
 
@@ -308,7 +308,7 @@ public class Tarea3 {
         Menu();
     } catch (Exception e) {
             System.out.println("");
-            System.out.println("***ATENCIÓN***");
+            System.out.println("                  ***ATENCIÓN***");
             System.out.println("¡EL INGRESO DE LETRAS Y/O SIGNOS NO ESTÁ PERMITIDO!");
             System.out.println("");
             Contador();
@@ -344,7 +344,7 @@ public class Tarea3 {
         System.out.println("El número: " + caracter + " se repite " + contador + " veces.");
      } catch (Exception e) {
             System.out.println("");
-            System.out.println("***ATENCIÓN***");
+            System.out.println("                  ***ATENCIÓN***");
             System.out.println("¡EL INGRESO DE LETRAS Y/O SIGNOS NO ESTÁ PERMITIDO!");
             System.out.println("");
             IDigitos();
