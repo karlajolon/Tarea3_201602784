@@ -11,6 +11,7 @@ public class Tarea3 {
     public static String Auxiliar;
     
     public static void Menu() {
+        try {
         Entrada = new Scanner(System.in);
         int option;
         do {
@@ -59,7 +60,15 @@ public class Tarea3 {
 
         } while (option != 5);
         Entrada.close();
-    }
+    } catch (Exception e) {
+            System.out.println("");
+            System.out.println("***ATENCIÓN***");
+            System.out.println("¡EL INGRESO DE LETRAS Y/O SIGNOS NO ESTÁ PERMITIDO!");
+            System.out.println("");
+            Menu();
+
+        }
+    } 
     
     public static void IUsuarios(){
         Scanner Nombres = new Scanner(System.in);
@@ -85,6 +94,7 @@ public class Tarea3 {
     }
     
     public static void Usuarios() {
+        try {
         Entrada1 = new Scanner(System.in);
         int option1;
         do {
@@ -120,9 +130,17 @@ public class Tarea3 {
             
         }while(option1!=4);
         Menu();
+     } catch (Exception e) {
+            System.out.println("");
+            System.out.println("***ATENCIÓN***");
+            System.out.println("¡EL INGRESO DE LETRAS Y/O SIGNOS NO ESTÁ PERMITIDO!");
+            System.out.println("");
+            Usuarios();
+        }
     }
     
     public static void Orden(){
+        try {
         Scanner scn = new Scanner(System.in);
         int a,b,c;
         System.out.println("");
@@ -170,10 +188,17 @@ public class Tarea3 {
                 }
             }
         }  
+    } catch (Exception e) {
+            System.out.println("");
+            System.out.println("***ATENCIÓN***");
+            System.out.println("¡EL INGRESO DE LETRAS Y/O SIGNOS NO ESTÁ PERMITIDO!");
+            System.out.println("");
+            Orden();
+        }
     }
     
     public static void Promedios() {
-
+        try {
         Scanner Notas = new Scanner(System.in);
         int Calificaciones[][] = new int[6][6];
         double suma0, suma1, suma2, suma3, suma4, suma5;
@@ -236,12 +261,19 @@ public class Tarea3 {
         promedio5 = (suma5 / 4);
 
         System.out.println("");
-        System.out.println("1." + "   " + Calificaciones[2][0] + "   " + Calificaciones[3][0] + "   " + Calificaciones[4][0] + "   " + Calificaciones[5][0] + "   " + promedio0);
-        System.out.println("2." + "   " + Calificaciones[2][1] + "   " + Calificaciones[3][1] + "   " + Calificaciones[4][1] + "   " + Calificaciones[5][1] + "   " + promedio1);
-        System.out.println("3." + "   " + Calificaciones[2][2] + "   " + Calificaciones[3][2] + "   " + Calificaciones[4][2] + "   " + Calificaciones[5][2] + "   " + promedio2);
-        System.out.println("4." + "   " + Calificaciones[2][3] + "   " + Calificaciones[3][3] + "   " + Calificaciones[4][3] + "   " + Calificaciones[5][3] + "   " + promedio3);
-        System.out.println("5." + "   " + Calificaciones[2][4] + "   " + Calificaciones[3][4] + "   " + Calificaciones[4][4] + "   " + Calificaciones[5][4] + "   " + promedio4);
+        System.out.println("Alumno 1" + "   " + Calificaciones[2][0] + "   " + Calificaciones[3][0] + "   " + Calificaciones[4][0] + "   " + Calificaciones[5][0] + "   " + promedio0);
+        System.out.println("Alumno 2" + "   " + Calificaciones[2][1] + "   " + Calificaciones[3][1] + "   " + Calificaciones[4][1] + "   " + Calificaciones[5][1] + "   " + promedio1);
+        System.out.println("Alumno 3" + "   " + Calificaciones[2][2] + "   " + Calificaciones[3][2] + "   " + Calificaciones[4][2] + "   " + Calificaciones[5][2] + "   " + promedio2);
+        System.out.println("Alumno 4" + "   " + Calificaciones[2][3] + "   " + Calificaciones[3][3] + "   " + Calificaciones[4][3] + "   " + Calificaciones[5][3] + "   " + promedio3);
+        System.out.println("Alumno 5" + "   " + Calificaciones[2][4] + "   " + Calificaciones[3][4] + "   " + Calificaciones[4][4] + "   " + Calificaciones[5][4] + "   " + promedio4);
         System.out.println("6." + "   " + Calificaciones[2][5] + "   " + Calificaciones[3][5] + "   " + Calificaciones[4][5] + "   " + Calificaciones[5][5] + "   " + promedio5);
+    } catch (Exception e) {
+            System.out.println("");
+            System.out.println("***ATENCIÓN***");
+            System.out.println("¡EL INGRESO DE LETRAS Y/O SIGNOS NO ESTÁ PERMITIDO!");
+            System.out.println("");
+            Promedios();
+        }
     }
 
     public static void Close() {
@@ -250,13 +282,13 @@ public class Tarea3 {
     }
 
     public static void Contador() {
-
+        try {
         Entrada2 = new Scanner(System.in);
         int Option2;
         do {
             System.out.println("");
-            System.out.println("1- Ingresar Número");
-            System.out.println("2- Regresar al menú principal");
+            System.out.println("1.- Ingresar Número");
+            System.out.println("2.- Regresar al Menú Principal");
 
             Option2 = Entrada2.nextInt();
             switch (Option2) {
@@ -274,9 +306,17 @@ public class Tarea3 {
 
         } while (Option2 != 2);
         Menu();
+    } catch (Exception e) {
+            System.out.println("");
+            System.out.println("***ATENCIÓN***");
+            System.out.println("¡EL INGRESO DE LETRAS Y/O SIGNOS NO ESTÁ PERMITIDO!");
+            System.out.println("");
+            Contador();
+        }
     }
 
     public static void IDigitos() {
+        try {
         Scanner lector = new Scanner(System.in);
         System.out.println("");
         System.out.println("Escriba un número para evaluar");
@@ -301,7 +341,14 @@ public class Tarea3 {
             cadena = cadena.replaceAll(cadena.charAt(0) + "", "");
         }
         System.out.println("");
-        System.out.println("El número: " + caracter + " se repite " + contador + " veces");
+        System.out.println("El número: " + caracter + " se repite " + contador + " veces.");
+     } catch (Exception e) {
+            System.out.println("");
+            System.out.println("***ATENCIÓN***");
+            System.out.println("¡EL INGRESO DE LETRAS Y/O SIGNOS NO ESTÁ PERMITIDO!");
+            System.out.println("");
+            IDigitos();
+        }
     }
     
     public static void main(String[] args) {
